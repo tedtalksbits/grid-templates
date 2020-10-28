@@ -15,6 +15,10 @@ body{
     background: var(--darker-dark);
     text-align: center;
 }
+h1{
+    font-size: 4.5rem;
+    font-weight: 900;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -37,24 +41,58 @@ main{
     background: var(--main-dark);
     grid-area: main;
 }
+.main-button{
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
+
+}
 #content1{
-    background: var(--main-dark);
+    background: var(--main-light);
     grid-area: content1;
 }
 #content2{
-    background: var(--main-dark);
+    background: var(--main-light);
     grid-area: content2;
 }
 #content3{
-    background: var(--main-dark);
+    background: var(--main-light);
     grid-area: content3;
 }
 #sidebar{
-    background: var(--main-light);
+    padding: 0;
+    background: var(--main-dark);
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: .5fr 1.5fr 1.5fr .5fr ;
+    grid-template-areas: 
+    "top"
+    "center"
+    "center"
+    "bottom"
+    ;
 }
+.sidebar__top{
+    grid-area: top;
+    border-radius: 5px 5px 0 0;
+    padding: var(--padding);
+}
+.sidebar__center{
+    grid-area: center;
+    padding: var(--padding);
+
+}
+.sidebar__bottom{
+    grid-area: bottom;
+    padding: var(--padding);
+
+}
+
 footer{
-    background: var(--darker-dark);
+    background: var(--primary-blue);
     grid-area: footer;
 }
 .all{
