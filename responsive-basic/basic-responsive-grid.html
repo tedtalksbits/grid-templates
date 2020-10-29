@@ -5,29 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Basic Grids😇</title>
 </head>
 <body>
     <div class="container">
-        <nav class="all">Nav</nav>
+        <nav class="all">
+            <div class="nav__left">
+                <img src="/images/startup.png" alt="">
+                <h3>Folio.</h3>
+            </div>
+            <div class="nav__center">
+                <div class="nav__center-input">
+                    <input type="text" name="" id="">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="nav__right">
+                <button class="nav-button hidden">GET STARTED</button>
+                <button class="nav-button">Login</button>
+            </div>
+        </nav>
         <main class="all">
             <h1>Get Started Today!</h1>
             <button class="main-button">GET STARTED</button>
         </main>
         <div id="sidebar" class="all">
             <div class="sidebar__top">
-                side bar top
+                <h3>Tedane Blake</h3>
+                <p>name@gmail.com</p>
             </div>
             <div class="sidebar__center">
-                side bar center
+                <div class="home sidebar__center-flex">
+                    <i class="fas fa-home    "></i>
+                    <p>Home</p>
+                </div>
+                <div class="portfolio sidebar__center-flex">
+                    <i class="fas fa-chart-line    "></i>
+                    <p>Portfolio</p>
+                </div>
+                <div class="settings sidebar__center-flex">
+                    <i class="fas fa-toolbox    "></i>
+                    <p>Settings</p>
+                </div>
+                <div class="profile sidebar__center-flex">
+                    <i class="fas fa-user    "></i>
+                    <p>Profile</p>
+                </div>
             </div>
-            <div class="side__bottom">
-                side bar bottom
+            <div class="sidebar__bottom">
+                <marquee>All rights reserved 2020</marquee>
             </div>
         </div>
-        <div id="content1" class="all">Content1</div>
-        <div id="content2" class="all">Content2</div>
-        <div id="content3" class="all">Content3</div>
+        <div id="content1" class="all content">
+            <img src="/images/stats.png" alt="">
+            <h3>
+                Live Charts
+            </h3>
+            <p>
+                Get live stock prices as it happens in the market.
+            </p>
+        </div>
+        <div id="content2" class="all content">
+            <img src="/images/alert.png" alt="">
+            <h3>
+                Live Alerts
+            </h3>
+            <p>
+                Set and get live alerts and updates on movements as it happens in the market.
+            </p>
+        </div>
+        <div id="content3" class="all content">
+            <img src="/images/strategy.png" alt="">
+            <h3>
+                Live Charts
+            </h3>
+            <p>
+                Get live stock prices as it happens in the market.
+            </p>
+        </div>
         <footer class="all">Footer</footer>
     </div>
     
